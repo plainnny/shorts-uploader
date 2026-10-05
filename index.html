@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shorts Auto Uploader</title>
+  <meta name="description" content="A private, single-user script that uploads the owner's own Shorts to their own channel via the YouTube Data API v3.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">Shorts Auto Uploader</a>
+    <nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <h1>Shorts Auto Uploader</h1>
+      <p class="muted">A private, single-user tool. Not a public service.</p>
+
+      <h2>What it is</h2>
+      <p>Shorts Auto Uploader is a small personal script that runs on its owner's Windows PC. It uploads short vertical videos, created by the owner, to the owner's own channel using the YouTube Data API v3 (<code>videos.insert</code>).</p>
+
+      <h2>Who uses it</h2>
+      <p>Only the channel owner. There are no other users, no sign-up, and no public access. The script is not distributed or offered to anyone else.</p>
+
+      <h2>How it works</h2>
+      <ul>
+        <li>The owner signs in once with their Google Account through Google's standard OAuth 2.0 consent screen (desktop-app flow).</li>
+        <li>The only permission requested is <code>https://www.googleapis.com/auth/youtube.upload</code>.</li>
+        <li>The resulting refresh token is stored only on the owner's PC.</li>
+        <li>For each video, the owner reviews the title, description and privacy setting before the upload is run.</li>
+        <li>Expected volume: a few uploads per day at most.</li>
+      </ul>
+
+      <h2>What it does not do</h2>
+      <ul>
+        <li>It does not read, collect, store or analyze data from other channels or users.</li>
+        <li>It does not use search, comments, analytics or any other YouTube API endpoint.</li>
+        <li>It does not send any data to servers other than Google's.</li>
+      </ul>
+
+      <h2>Policies</h2>
+      <p>By using this tool you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See also this tool's <a href="privacy.html">Privacy Policy</a>, its <a href="terms.html">Terms of Service</a>, and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+      <h2>Contact</h2>
+      <p><a href="mailto:plainnny@gmail.com">plainnny@gmail.com</a></p>
+    </div>
+  </main>
+
+  <footer>Shorts Auto Uploader uses YouTube API Services. It is not affiliated with or endorsed by YouTube or Google.</footer>
+</body>
+</html>
